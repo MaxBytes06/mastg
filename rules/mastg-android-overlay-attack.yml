@@ -1,0 +1,13 @@
+rules:
+  - id: android-missing-filterTouchesWhenObscured
+    severity: WARNING
+    languages:
+      - xml
+    summary:
+      The rule checks if the filterTouchesWhenObscured set to true on layout files.
+    message: |
+      "[MASVS-CODE] Potential tapjacking on layout: this view does not call setFilterTouchesWhenObscured(true) to block obscured touch events. "
+    pattern-regex: |
+      (?s)<[^>]*(EditText|Button|View|TextView|ImageButton|CheckBox|RadioButton|Spinner)[^>]*>
+    pattern-not-regex: |
+      android:filterTouchesWhenObscured\s*=\s*"(true|True|TRUE)"
