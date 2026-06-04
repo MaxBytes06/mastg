@@ -1,0 +1,4 @@
+Attempting to run shell module
+
+TOP_SECRET_TOKEN=tok_live_12345
+PIN=9876

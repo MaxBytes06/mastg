@@ -1,0 +1,6 @@
+Attempting to run shell module
+
+| _id | username | password       | note         |
+| 1   | admin    | StrongPwd!2026 | prod account |
+| 2   | test     | test1234       | dev account  |
+
